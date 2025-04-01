@@ -78,6 +78,7 @@ def main():
             if celsius is not None:
                 # Create telemetry message with both Celsius and Fahrenheit
                 telemetry = {
+                    'temperature': celsius,
                     'temperature_c': celsius,
                     'temperature_f': fahrenheit,
                     'timestamp': time.time()
